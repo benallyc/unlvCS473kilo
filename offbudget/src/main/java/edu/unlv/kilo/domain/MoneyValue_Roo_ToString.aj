@@ -3,14 +3,14 @@
 
 package edu.unlv.kilo.domain;
 
-import edu.unlv.kilo.domain.MoneyValue;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
+import java.lang.String;
 
 privileged aspect MoneyValue_Roo_ToString {
     
     public String MoneyValue.toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+        StringBuilder sb = new StringBuilder();
+        sb.append("Amount: ").append(getAmount());
+        return sb.toString();
     }
     
 }

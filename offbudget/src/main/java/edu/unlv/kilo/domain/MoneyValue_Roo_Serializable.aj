@@ -3,7 +3,6 @@
 
 package edu.unlv.kilo.domain;
 
-import edu.unlv.kilo.domain.MoneyValue;
 import java.io.Serializable;
 
 privileged aspect MoneyValue_Roo_Serializable {

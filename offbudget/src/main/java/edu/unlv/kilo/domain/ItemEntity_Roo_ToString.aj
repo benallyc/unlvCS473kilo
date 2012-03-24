@@ -3,14 +3,15 @@
 
 package edu.unlv.kilo.domain;
 
-import edu.unlv.kilo.domain.ItemEntity;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
+import java.lang.String;
 
 privileged aspect ItemEntity_Roo_ToString {
     
     public String ItemEntity.toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+        StringBuilder sb = new StringBuilder();
+        sb.append("Adjustments: ").append(getAdjustments() == null ? "null" : getAdjustments().size()).append(", ");
+        sb.append("Transactions: ").append(getTransactions() == null ? "null" : getTransactions().size());
+        return sb.toString();
     }
     
 }

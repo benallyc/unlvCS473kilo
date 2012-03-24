@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_edu_unlv_kilo_domain_User" items="${users}" z="3oUnDU4Sf43Ups1uRhGhab/ZrCk=">
+        <table:table data="${users}" id="l_edu_unlv_kilo_domain_User" path="/users" z="bfzOxKTkx43j1SXj2FMV/XeCoGI=">
+            <table:column id="c_edu_unlv_kilo_domain_User_firstName" property="firstName" z="hiNryEXlaamRRhOFhGf34hxo0XI="/>
+            <table:column id="c_edu_unlv_kilo_domain_User_lastName" property="lastName" z="yVyd4tRVZX6RcEn0Y1p4QKM+vcA="/>
+            <table:column id="c_edu_unlv_kilo_domain_User_emailAddress" property="emailAddress" z="nntHggYkrjmvRg6XwvwRUUpFDRc="/>
+            <table:column id="c_edu_unlv_kilo_domain_User_password" property="password" z="auayxiD6BO1862HROt2Ui9J/n04="/>
+            <table:column date="true" dateTimePattern="${user_activationdate_date_format}" id="c_edu_unlv_kilo_domain_User_activationDate" property="activationDate" z="BuiuZOcephxNIeJ+t3Ntm6rIrok="/>
+            <table:column id="c_edu_unlv_kilo_domain_User_activationKey" property="activationKey" z="utcEVJmqKcRA1xTB1QZNuE+m9ck="/>
+        </table:table>
+    </page:list>
+</div>

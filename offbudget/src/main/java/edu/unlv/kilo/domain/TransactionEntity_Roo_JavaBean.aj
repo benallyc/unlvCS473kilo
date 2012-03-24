@@ -5,7 +5,6 @@ package edu.unlv.kilo.domain;
 
 import edu.unlv.kilo.domain.MoneyValue;
 import edu.unlv.kilo.domain.TransactionDescription;
-import edu.unlv.kilo.domain.TransactionEntity;
 import java.util.Date;
 
 privileged aspect TransactionEntity_Roo_JavaBean {

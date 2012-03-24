@@ -3,7 +3,7 @@
 
 package edu.unlv.kilo.domain;
 
-import edu.unlv.kilo.domain.ItemAdjustment;
+import java.lang.String;
 import java.util.Date;
 
 privileged aspect ItemAdjustment_Roo_JavaBean {

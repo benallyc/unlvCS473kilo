@@ -3,14 +3,16 @@
 
 package edu.unlv.kilo.domain;
 
-import edu.unlv.kilo.domain.TransactionEntity;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
+import java.lang.String;
 
 privileged aspect TransactionEntity_Roo_ToString {
     
     public String TransactionEntity.toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+        StringBuilder sb = new StringBuilder();
+        sb.append("Amount: ").append(getAmount()).append(", ");
+        sb.append("Description: ").append(getDescription()).append(", ");
+        sb.append("Timeof: ").append(getTimeof());
+        return sb.toString();
     }
     
 }

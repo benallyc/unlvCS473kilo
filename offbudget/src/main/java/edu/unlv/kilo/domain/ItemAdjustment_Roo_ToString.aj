@@ -3,14 +3,15 @@
 
 package edu.unlv.kilo.domain;
 
-import edu.unlv.kilo.domain.ItemAdjustment;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
+import java.lang.String;
 
 privileged aspect ItemAdjustment_Roo_ToString {
     
     public String ItemAdjustment.toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+        StringBuilder sb = new StringBuilder();
+        sb.append("Description: ").append(getDescription()).append(", ");
+        sb.append("EffectiveDate: ").append(getEffectiveDate());
+        return sb.toString();
     }
     
 }

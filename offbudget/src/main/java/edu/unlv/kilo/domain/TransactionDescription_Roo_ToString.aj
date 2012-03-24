@@ -3,14 +3,15 @@
 
 package edu.unlv.kilo.domain;
 
-import edu.unlv.kilo.domain.TransactionDescription;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
+import java.lang.String;
 
 privileged aspect TransactionDescription_Roo_ToString {
     
     public String TransactionDescription.toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+        StringBuilder sb = new StringBuilder();
+        sb.append("Comment: ").append(getComment()).append(", ");
+        sb.append("Description: ").append(getDescription());
+        return sb.toString();
     }
     
 }

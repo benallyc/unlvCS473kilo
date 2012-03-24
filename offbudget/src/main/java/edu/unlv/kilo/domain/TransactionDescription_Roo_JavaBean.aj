@@ -3,7 +3,7 @@
 
 package edu.unlv.kilo.domain;
 
-import edu.unlv.kilo.domain.TransactionDescription;
+import java.lang.String;
 
 privileged aspect TransactionDescription_Roo_JavaBean {
     

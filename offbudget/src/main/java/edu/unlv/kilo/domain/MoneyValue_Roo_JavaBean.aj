@@ -3,8 +3,6 @@
 
 package edu.unlv.kilo.domain;
 
-import edu.unlv.kilo.domain.MoneyValue;
-
 privileged aspect MoneyValue_Roo_JavaBean {
     
     public long MoneyValue.getAmount() {

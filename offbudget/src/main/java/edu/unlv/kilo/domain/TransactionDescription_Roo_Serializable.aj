@@ -3,7 +3,6 @@
 
 package edu.unlv.kilo.domain;
 
-import edu.unlv.kilo.domain.TransactionDescription;
 import java.io.Serializable;
 
 privileged aspect TransactionDescription_Roo_Serializable {
